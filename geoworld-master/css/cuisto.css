@@ -1,0 +1,32 @@
+
+
+.conte{
+margin-left: 150px;  /*160max*/ 
+background-color: #79A70A;
+position: absolute;
+  }
+  table.conte{
+    border-top-left-radius: 20px;
+  }
+#tab2{
+  /* left: 180px; pour le min*/
+  left: 200px; 
+}
+h1,h2{
+  top: 50px;
+  text-align: start;
+  margin-top: 30px;
+}
+
+.infoAlert,strong{
+  font-size: large;
+  color: red;
+}
+
+.sur_droite{
+  float: left;
+}
+
+#modification_valeur{
+  float: right;
+}

@@ -83,7 +83,7 @@ function setInfoContries($pays,$id,$valeur)
 
 
 /**
- * Okk, c la liste des continant
+ * donne la liste les login et mdp
  * 
  * @return liste d'objets
  */
@@ -95,7 +95,7 @@ function getConnextion()
 }
 
 /**
- * Okk, c la liste des continant
+ * c la liste des continant
  * 
  * @return liste d'objets
  */
@@ -107,9 +107,8 @@ function getContinents()
 }
 
 /**
- * Okk, c la liste des continant
+ * retourn les information personnele du salarier ($reff)
  * 
- * @param string $reff ugtu 
  * 
  * @return liste d'objets
  */
@@ -124,10 +123,7 @@ function getInfoPerso($reff='totoF5')
 
 
 /**
- * Okk, c la liste des continant
- * 
- * @param $profile ugtu 
- * 
+ * joute un profile avec le pdo
  * @return liste d'objets
  */
 function addProfile($profile="totoF5",$role="user")
@@ -144,12 +140,7 @@ function addProfile($profile="totoF5",$role="user")
 
 
 /**
- * Okk, c la liste des continant
- * 
- * @param  $file le plazz
- * 
- * @param  $key les cle de part
- * 
+ *  envoie une requette pdo qui modifie un profile
  * @return array d'objets
  */
 function setProfile($file,$key,$lo)
@@ -159,16 +150,3 @@ function setProfile($file,$key,$lo)
     echo $query,"<br>";
    return $pdo->query($query)->fetchAll();
 }
-/*
-//     $fi="";
-//     foreach($profile as $pro=>$fil)
-//     {
-//         if ($fil!='')
-//             $fi="$pro='$fil,' ";
-//     }
-
-//     foreach($profile as $fil)
-// {
-//     if ($fil!='')
-//         $fich="$fich '$fil', ";
-// }*/
